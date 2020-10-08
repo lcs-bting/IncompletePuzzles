@@ -24,6 +24,11 @@ print("Enter tine spacing:")
 print("   ", terminator: "")
 let spacing = Int(readLine()!)!
 
+// Get handle length
+print("Enter handle length:")
+print("   ", terminator: "")
+//let spacing = Int(readLine()!)!
+
 // OUTPUT
 
 // Produce top of trident according to length given
