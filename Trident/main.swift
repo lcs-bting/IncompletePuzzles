@@ -27,7 +27,8 @@ let spacing = Int(readLine()!)!
 // Get handle length
 print("Enter handle length:")
 print("   ", terminator: "")
-//let spacing = Int(readLine()!)!
+let handleLength = Int(readLine()!)!
+//let handlelengh = Int(readLine()!)!
 
 // OUTPUT
 

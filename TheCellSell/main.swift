@@ -33,7 +33,12 @@ let weekend = Int(readLine()!)!
 var a = 0
 
 // Add daytime cost
-a += (day - 100) * 25
+if a <= 100 {
+    a = 0
+} else {
+    a += (day - 100) * 25
+}
+
 
 // Add evening cost
 a += evening * 15
@@ -45,7 +50,11 @@ a += weekend * 20
 var b = 0
 
 // Add daytime cost
-b += (day - 250) * 45
+if b <= 250 {
+    b = 0
+} else {
+    b += (day - 250) * 45
+}
 
 // Add evening cost
 b += evening * 35
