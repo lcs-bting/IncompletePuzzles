@@ -40,6 +40,7 @@ if a <= 100 {
 }
 
 
+
 // Add evening cost
 a += evening * 15
 

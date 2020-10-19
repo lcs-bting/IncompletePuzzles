@@ -31,7 +31,13 @@ let handleLength = Int(readLine()!)!
 //let handlelengh = Int(readLine()!)!
 
 // OUTPUT
-
+func line() -> String{
+    var a = ""
+    for _ in 0...(2*spacing + 2){
+            a += "*"
+    }
+    return a
+}
 // Produce top of trident according to length given
 for _ in 1...tineLength {
     // Print the tines
@@ -49,5 +55,16 @@ for _ in 1...tineLength {
     // Go to next line of output
     print("")
 }
+print(line())
 
+// Printing the handle
+
+for _ in 0...(handleLength - 1){
+    var a = ""
+    for _ in 0...spacing{
+        a += " "
+    }
+    a += "*"
+    print(a)
+}
 
