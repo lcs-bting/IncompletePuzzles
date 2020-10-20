@@ -16,16 +16,94 @@ print("=============")
 // INPUT
 
 // Get daytime minutes
-print("Number of daytime minutes?")
-let day = Int(readLine()!)!
+var daytime = 0
+while true {
+    
+    // Prompt the user
+    print("Number of daytime minutes? ")
+    
+    // Collect input
+    guard let givenInput = readLine() else{
+        continue
+    }
+    
+    // Convert to an integer
+    guard let givenInteger = Int(givenInput) else {
+        continue
+    }
+    
+    // Check that the value is positive (zero or above)
+    guard givenInteger >= 0 else {
+        continue
+    }
+    
+    // Asign the given integer to our "daytime" variable
+    daytime = givenInteger
+    
+    // Stop th loop
+    break
+}
+
 
 // Get evening minutes
-print("Number of evening minutes?")
-let evening = Int(readLine()!)!
+var evening = 0
+while true {
+    
+    // Prompt the user
+    print("Number of evening minutes? ")
+    
+    // Collect input
+    guard let givenInput = readLine() else{
+        continue
+    }
+    
+    // Convert to an integer
+    guard let givenInteger = Int(givenInput) else {
+        continue
+    }
+    
+    // Check that the value is positive (zero or above)
+    guard givenInteger >= 0 else {
+        continue
+    }
+    
+    // Asign the given integer to our "evening" variable
+    evening = givenInteger
+    
+    // Stop th loop
+    break
+}
+
 
 // Get weekend minutes
-print("Number of weekend minutes?")
-let weekend = Int(readLine()!)!
+var weekend = 0
+while true {
+    
+    // Prompt the user
+    print("Number of weekend minutes? ")
+    
+    // Collect input
+    guard let givenInput = readLine() else{
+        continue
+    }
+    
+    // Convert to an integer
+    guard let givenInteger = Int(givenInput) else {
+        continue
+    }
+    
+    // Check that the value is positive (zero or above)
+    guard givenInteger >= 0 else {
+        continue
+    }
+    
+    // Asign the given integer to our "weekend" variable
+    evening = givenInteger
+    
+    // Stop th loop
+    break
+}
+
 
 // PROCESS
 
@@ -36,7 +114,7 @@ var a = 0
 if a <= 100 {
     a = 0
 } else {
-    a += (day - 100) * 25
+    a += (daytime - 100) * 25
 }
 
 
@@ -54,7 +132,7 @@ var b = 0
 if b <= 250 {
     b = 0
 } else {
-    b += (day - 250) * 45
+    b += (daytime - 250) * 45
 }
 
 // Add evening cost
