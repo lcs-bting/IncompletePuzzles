@@ -98,7 +98,7 @@ while true {
     }
     
     // Asign the given integer to our "weekend" variable
-    evening = givenInteger
+    weekend = givenInteger
     
     // Stop th loop
     break
@@ -111,7 +111,7 @@ while true {
 var a = 0
 
 // Add daytime cost
-if a <= 100 {
+if daytime <= 100 {
     a = 0
 } else {
     a += (daytime - 100) * 25
@@ -120,16 +120,18 @@ if a <= 100 {
 
 
 // Add evening cost
-a += evening * 15
+print((evening * 15))
+
+a += (evening * 15)
 
 // Add wekend cost
-a += weekend * 20
+a += (weekend * 20)
 
 // Calculate cost for plan B
 var b = 0
 
 // Add daytime cost
-if b <= 250 {
+if daytime <= 250 {
     b = 0
 } else {
     b += (daytime - 250) * 45
@@ -148,6 +150,8 @@ print("Plan B costs \(b)")
 
 if a > b {
     print("Plan B is cheapest.")
-} else {
+} else if a == b{
+    print("Plan A and B is the same")
+}else {
     print("Plan A is cheapest.")
 }
